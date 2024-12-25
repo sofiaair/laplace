@@ -1,0 +1,12 @@
+{
+  "name": "Docker-in-Docker Container",
+  "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "postCreateCommand": "sudo systemctl enable docker.socket",
+  "remoteUser": "vscode"
+}
